@@ -19,11 +19,31 @@
     vivo:abbreviation         "FM_F1_M_IdentUnique" ;
     dcat:landingPage          <https://w3id.org/fair-metrics/general/FM_F1_M_IdentUnique> ;
 
-    dcterms:description       """<p>This metric evaluates whether the identifier provided as input satisfies the EOSC-PID aligned [FAIRsharing definition](<a href="https://fairsharing.gitbook.io/fairsharing/record-sections-and-fields/general-information/globally-unique-persistent-and-resolvable-identifier-schemas)">https://fairsharing.gitbook.io/fairsharing/record-sections-and-fields/general-information/globally-unique-persistent-and-resolvable-identifier-schemas)</a> of resolvability.</p>
-
-<p>F1 requires that metadata be assigned a globally unique, persistent and resolvable identifier. This metric is particularly concerned with the resolvability aspect of GUPRIs. For this metric, there must also be a known machine-actionable resolution protocol for the identifier. Although resolvability is not explicitly mentioned in the original Nature paper on the FAIR Principles, due to the relationship among global uniqueness, persistence and resolvability, please note that the [GO FAIR Foundation states](<a href="https://www.gofair.foundation/f1)">https://www.gofair.foundation/f1)</a> that FAIR implementations should require all three aspects. As such, some aspects of this metric overlap with FAIR A1. Resolvability is required so that identifiers are actionable for both humans and machines. In this metric, the definition of persistence follows the [FAIRsharing guidance](<a href="https://fairsharing.gitbook.io/fairsharing/record-sections-and-fields/general-information/globally-unique-persistent-and-resolvable-identifier-schemas)">https://fairsharing.gitbook.io/fairsharing/record-sections-and-fields/general-information/globally-unique-persistent-and-resolvable-identifier-schemas)</a> on Globally Unique, Persistent and Resolvable Identifier (GUPRI) schemas. This definition requires that humans and machines must be able to use the identifier to access information on the digital object. To make it globally resolvable as per the EOSC PID definition, it further needs to be part of a namespace defined by a syntax that is controlled by an Authority. There should be an established tombstoning or equivalent procedure. This metric evaluates whether the identifier provided as input satisfies the FAIRsharing definition of resolvability. The evaluation assesses whether the identifier schema supports the community definition provided by FAIRsharing.</p>
-
-<p>For an in-depth understanding of the issues around identifiers, please see http://dx.plos.org/10.1371/journal.pbio.2001414">http://dx.plos.org/10.1371/journal.pbio.2001414
+    dcterms:description       """This metric evaluates whether the identifier provided as input 
+    satisfies the EOSC-PID aligned FAIRsharing definition of global uniqueness.
+<p/>Why should we measure it?
+<p/>FAIR Principle F1 requires that metadata be assigned a globally unique, 
+    persistent and resolvable identifier. This metric is particularly concerned 
+    with the globally uniqueness aspect of GUPRIs; 
+        global uniqueness is required to prevent identifier collision across institutions, 
+            systems and domains. Otherwise, an identifier shared by multiple resources 
+            will confound efforts to describe that resource, or to use the identifier to 
+            retrieve it. In this metric, the definition of global uniqueness follows 
+            the FAIRsharing guidance on Globally Unique, 
+                Persistent and Resolvable Identifier (GUPRI) schemas. 
+            This guidance requires that the identifier schema must use a 
+            controlled syntax/namespaces to avoid clashes; such syntax/namespaces must be 
+            governed by clearly defined Authorities. If there is any way the identifier 
+            could be created as part of another identifier system (e.g. if it 
+            is a structured series of alphanumeric characters such as P12345 (UniProt Accession Number) 
+            that could theoretically be used for other identifiers) 
+            then it is not globally unique. To fulfil this requirement in practice,
+                 it generally (but not always) requires a URL prefix of some kind. 
+                This metric evaluates whether the identifier provided as input 
+                satisfies the FAIRsharing definition of global uniqueness. The 
+                evaluation assesses whether the identifier schema operates 
+                within a governed namespace that prevents external collision 
+                and ensures unambiguous interpretation beyond the local database context.
 """ ;
     dcat:keyword              "FAIR", "F1", "identifier", "metadata" ;
 dqv:inDimension <https://doi.org/10.25504/FAIRsharing.a2cea7> ;

@@ -52,7 +52,7 @@ dqv:inDimension <https://doi.org/10.25504/FAIRsharing.820324> ;
     ftr:applicationArea       <http://www.fairsharing.org/ontology/subject/SRAO_0000401> ;
     dcterms:license           <https://creativecommons.org/licenses/by/4.0/> ;
 
-    ftr:hasPositiveValidation <https://doi.org/10.5281/zenodo.17901310(https://doi.org/10.5281/zenodo.17901310)> ;
+    ftr:hasPositiveValidation <https://doi.org/10.5281/zenodo.17901310> ;
 
     ftr:supportedBy           <https://w3id.org/FAIR-Champion> ;
     dpv:isApplicableFor       schema:CreativeWork .

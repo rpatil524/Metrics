@@ -19,11 +19,34 @@
     vivo:abbreviation         "FM_R1-1_M_DbStdLic" ;
     dcat:landingPage          <https://w3id.org/fair-metrics/general/FM_R1-1_M_DbStdLic> ;
 
-    dcterms:description       """<p>This metric evaluates whether there is at least one licence declared at the database level in the FAIRsharing registry record associated with the identifier under evaluation (see FAIRsharing [documentation for licences](<a href="https://fairsharing.gitbook.io/fairsharing/record-sections-and-fields/licences-and-support-links/licences)).">https://fairsharing.gitbook.io/fairsharing/record-sections-and-fields/licences-and-support-links/licences)).</a></p>
+    dcterms:description       """<p>This metric evaluates whether there is at least one 
+    licence declared at the database level in the FAIRsharing registry 
+    record associated with the identifier under evaluation 
+    (see FAIRsharing
+     [documentation for licences](https://fairsharing.gitbook.io/fairsharing/record-sections-and-fields/licences-and-support-links/licences)</p>
 
-<p>R1.1 requires that metadata be released with a clear and accessible data usage licence. The purpose of this principle is to ensure that reuse conditions are explicitly stated and legally unambiguous. This metric evaluates whether there is at least one licence declared at the database level in the FAIRsharing registry record associated with the identifier under evaluation. Under this interpretation, the evaluation retrieves the FAIRsharing registry record for the owning database and checks for the presence of one or more values in the “Licences” field, as defined in the [FAIRsharing registry documentation](<a href="https://fairsharing.gitbook.io/fairsharing/record-sections-and-fields/licences-and-support-links/licences).">https://fairsharing.gitbook.io/fairsharing/record-sections-and-fields/licences-and-support-links/licences).</a> These licences represent usage conditions known to apply within the database. A resource satisfies this metric if the FAIRsharing registry record for the database lists at least one recognised licence. While a useful measure, this information only provides a list of licences that apply to content, and does not explicitly state which one applies to which research objects, nor does it ensure that the database uses a licence for every research object. However, in cases where the licence information is not provided within the resolved metadata, this will provide some extra information.  Communities may wish to use this metric in conjunction with others that will evaluate resolved metadata where the specific licence format and structure is known. Note that, in order for this metric to function, tests must know the FAIRsharing database record URL/DOI so that FAIRsharing metadata may be retrieved. This can be done in a variety of ways, e.g. using the FAIRsharing API to find possible matches between the identifier and registered databases, hard coding the FAIRsharing record identifier, or expecting it to be provided as a second argument to the test.</p>
-
-<p>#</p>""" ;
+<p>R1.1 requires that metadata be released with a clear and accessible data usage licence. 
+The purpose of this principle is to ensure that reuse conditions are explicitly stated and 
+legally unambiguous. This metric evaluates whether there is at least one licence declared 
+at the database level in the FAIRsharing registry record associated with the identifier under 
+evaluation. Under this interpretation, the evaluation retrieves the FAIRsharing registry record 
+for the owning database and checks for the presence of one or more values in the “Licences” 
+field, as defined in the 
+[documentation for licences](https://fairsharing.gitbook.io/fairsharing/record-sections-and-fields/licences-and-support-links/licences)
+These licences represent usage conditions known to apply within the database. 
+A resource satisfies this metric if the FAIRsharing registry record for the database 
+lists at least one recognised licence. While a useful measure, this information only 
+provides a list of licences that apply to content, and does not explicitly state which 
+one applies to which research objects, nor does it ensure that the database uses a licence 
+for every research object. However, in cases where the licence information is not provided 
+within the resolved metadata, this will provide some extra information.  Communities may wish 
+to use this metric in conjunction with others that will evaluate resolved metadata where the 
+specific licence format and structure is known. Note that, in order for this metric to function, 
+    tests must know the FAIRsharing database record URL/DOI so that FAIRsharing metadata may be 
+    retrieved. This can be done in a variety of ways, e.g. using the FAIRsharing API to find 
+    possible matches between the identifier and registered databases, hard 
+coding the FAIRsharing record identifier, or expecting it to be provided as a second argument to the test.</p>
+""" ;
     dcat:keyword              "FAIR", "R1.1", "identifier", "metadata" ;
     dqv:inDimension <https://doi.org/10.25504/FAIRsharing.482c33> ;
 

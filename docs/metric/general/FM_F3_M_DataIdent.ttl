@@ -1,0 +1,84 @@
+@prefix vcard:   <http://www.w3.org/2006/vcard/ns#> .
+@prefix ftr:     <https://w3id.org/ftr#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix dcat:    <http://www.w3.org/ns/dcat#> .
+@prefix dpv:     <https://w3id.org/dpv#> .
+@prefix schema:  <https://schema.org/> .
+@prefix vivo:    <http://vivoweb.org/ontology/core#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dqv:    <http://www.w3.org/ns/dqv#> .
+
+<https://w3id.org/fair-metrics/general/FM_F3_M_DataIdent>
+    a                          ftr:Metric, dcat:Dataset ;
+    rdfs:isDefinedBy            <https://fairmetrics.github.io/Metrics/metric/general/FM_F3_M_DataIdent.ttl> ;
+
+    ftr:identifier            "https://w3id.org/fair-metrics/general/FM_F3_M_DataIdent"^^xsd:anyURI ;
+    dcterms:title             "FAIR Metric - F3 - Metadata - includes its own identifier" ;
+    vivo:abbreviation         "FM_F3_M_DataIdent" ;
+    dcat:landingPage          <https://w3id.org/fair-metrics/general/FM_F3_M_DataIdent> ;
+
+    dcterms:description       """<p>This metric evaluates whether the metadata record explicitly includes the 
+    identifier of the research object(s) it describes.
+<p><p>
+F3 requires that metadata include the identifier(s) of the research object(s) it describes. 
+To align with FAIR, if a metadata record is separated from its associated research object
+ (which is common in harvesting and indexing), the connection between them must be 
+ explicitly preserved. This metric is concerned with the explicit linkage aspect
+  of FAIR; F3 ensures that a machine-actionable relationship exists, allowing 
+  harvesters to unambiguously navigate from a descriptive metadata record 
+  back to the research object itself. Because many research objects cannot be 
+  arbitrarily extended to include references to their metadata, in many cases the 
+  only means to discover the metadata related to a research object will be 
+  to search based on the identifier of the research object itself.
+<p><p>
+While Principle F1 focuses on the qualities of the identifier schema 
+being used (globally unique, persistent and resolvable), Principle F3 
+relates to the linkage aspects of the research object identifier. It does not 
+mandate that the identifier of the research object within the metadata record 
+be immediately resolvable; rather, it requires that the identifier is present, 
+    and formally structured so that the relationship can be maintained and 
+    indexed by automated services.
+<p><p>
+The discovery of a research object should be possible 
+from its metadata. For this to happen, the metadata must explicitly 
+contain the identifier for the digital resource it describes, and this 
+should be present in the form of a qualified reference. This metric 
+evaluates whether the identifier provided as input resolves to 
+metadata that contains a research object identifier. Further, 
+    that research object identifier must be distinguished 
+    from the numerous other fields and values that will be present in the metadata.
+""" ;
+    dcat:keyword              "FAIR", "F3", "identifier", "metadata" ;
+dqv:inDimension <https://doi.org/10.25504/FAIRsharing.820324> ;
+    dcat:landingPage          <https://w3id.org/fair-metrics/general/FM_F3_M_DataIdent> ;
+
+
+    dcat:contactPoint           [
+        a                     vcard:Individual ;
+        vcard:fn              "Allyson L. Lister" ;
+        vivo:orcidId          <http://orcid.org/0000-0002-7702-4495> ;
+        vcard:hasEmail             <mailto:allyson.lister@oerc.ox.ac.uk> ;
+    ] ;
+
+    dcat:contactPoint           [
+        a                     vcard:Individual ;
+        vcard:fn              "Mark D. Wilkinson" ;
+        vcard:organization-name "Wilkinson Laboratory, UPM, Madrid";
+        vcard:hasEmail             <mailto:mark.wilkinson@upm.es> ;
+    ] ;
+    
+	ftr:status "Active"@en ;
+    dcterms:issued            "2026-05-13"^^xsd:date ;
+    dcterms:modified          "2026-05-13"^^xsd:date ;
+
+    dcat:version              "Champion1.0" ;
+
+    ftr:applicationArea       <http://www.fairsharing.org/ontology/subject/SRAO_0000401> ;
+    dcterms:license           <https://creativecommons.org/licenses/by/4.0/> ;
+
+
+    ftr:supportedBy           <https://w3id.org/FAIR-Champion> ;
+    dpv:isApplicableFor       schema:CreativeWork .
+
