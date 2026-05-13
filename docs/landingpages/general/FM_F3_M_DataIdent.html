@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>FAIR Metric - F1 - Metadata - Identifier is resolvable</title>
+  <title>FAIR Metric - F3 - Metadata - includes its own identifier</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 </head>
 <body>
@@ -28,20 +28,20 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <h1 class="text-center">FAIR Metric - F1 - Metadata - Identifier is resolvable</h1>
+        <h1 class="text-center">FAIR Metric - F3 - Metadata - includes its own identifier</h1>
       </div>
     </div>
 
     <div class="row">
       <div class="col-md-12 well" style="font-size: 16px;">
-        This metric evaluates whether the identifier provided as input <br>    satisfies the EOSC-PID aligned FAIRsharing definition of global uniqueness.<br><p/>Why should we measure it?<br><p/>FAIR Principle F1 requires that metadata be assigned a globally unique, <br>    persistent and resolvable identifier. This metric is particularly concerned <br>    with the globally uniqueness aspect of GUPRIs; <br>        global uniqueness is required to prevent identifier collision across institutions, <br>            systems and domains. Otherwise, an identifier shared by multiple resources <br>            will confound efforts to describe that resource, or to use the identifier to <br>            retrieve it. In this metric, the definition of global uniqueness follows <br>            the FAIRsharing guidance on Globally Unique, <br>                Persistent and Resolvable Identifier (GUPRI) schemas. <br>            This guidance requires that the identifier schema must use a <br>            controlled syntax/namespaces to avoid clashes; such syntax/namespaces must be <br>            governed by clearly defined Authorities. If there is any way the identifier <br>            could be created as part of another identifier system (e.g. if it <br>            is a structured series of alphanumeric characters such as P12345 (UniProt Accession Number) <br>            that could theoretically be used for other identifiers) <br>            then it is not globally unique. To fulfil this requirement in practice,<br>                 it generally (but not always) requires a URL prefix of some kind. <br>                This metric evaluates whether the identifier provided as input <br>                satisfies the FAIRsharing definition of global uniqueness. The <br>                evaluation assesses whether the identifier schema operates <br>                within a governed namespace that prevents external collision <br>                and ensures unambiguous interpretation beyond the local database context.<br>
+        <p>This metric evaluates whether the metadata record explicitly includes the <br>    identifier of the research object(s) it describes.<br><p><p><br>F3 requires that metadata include the identifier(s) of the research object(s) it describes. <br>To align with FAIR, if a metadata record is separated from its associated research object<br> (which is common in harvesting and indexing), the connection between them must be <br> explicitly preserved. This metric is concerned with the explicit linkage aspect<br>  of FAIR; F3 ensures that a machine-actionable relationship exists, allowing <br>  harvesters to unambiguously navigate from a descriptive metadata record <br>  back to the research object itself. Because many research objects cannot be <br>  arbitrarily extended to include references to their metadata, in many cases the <br>  only means to discover the metadata related to a research object will be <br>  to search based on the identifier of the research object itself.<br><p><p><br>While Principle F1 focuses on the qualities of the identifier schema <br>being used (globally unique, persistent and resolvable), Principle F3 <br>relates to the linkage aspects of the research object identifier. It does not <br>mandate that the identifier of the research object within the metadata record <br>be immediately resolvable; rather, it requires that the identifier is present, <br>    and formally structured so that the relationship can be maintained and <br>    indexed by automated services.<br><p><p><br>The discovery of a research object should be possible <br>from its metadata. For this to happen, the metadata must explicitly <br>contain the identifier for the digital resource it describes, and this <br>should be present in the form of a qualified reference. This metric <br>evaluates whether the identifier provided as input resolves to <br>metadata that contains a research object identifier. Further, <br>    that research object identifier must be distinguished <br>    from the numerous other fields and values that will be present in the metadata.<br>
       </div>
     </div>
 
     <div class="row flex-space-between">
       <div class="col-md-12 align-items-center">
         <h4 class="text-left text-separation">Metric information</h4>
-        <a href="../../FM_F1_M_IdentUnique.ttl" title="RDF Turtle">
+        <a href="../../FM_F3_M_DataIdent.ttl" title="RDF Turtle">
           <img border="0" src="http://www.w3.org/RDF/icons/rdf_flyer.24" alt="RDF Icon"/>
         </a>
       </div>
@@ -49,17 +49,17 @@
 
     <div class="row row-equal">
       <div class="col-md-3 well tag_div"><strong>Title</strong></div>
-      <div class="col-md-9 well">FAIR Metric - F1 - Metadata - Identifier is resolvable</div>
+      <div class="col-md-9 well">FAIR Metric - F3 - Metadata - includes its own identifier</div>
     </div>
 
     <div class="row row-equal">
       <div class="col-md-3 well tag_div"><strong>Identifier</strong></div>
-      <div class="col-md-9 well"><a href="https://w3id.org/fair-metrics/general/FM_F1_M_IdentUnique" target="_blank">https://w3id.org/fair-metrics/general/FM_F1_M_IdentUnique</a></div>
+      <div class="col-md-9 well"><a href="https://w3id.org/fair-metrics/general/FM_F3_M_DataIdent" target="_blank">https://w3id.org/fair-metrics/general/FM_F3_M_DataIdent</a></div>
     </div>
 
     <div class="row row-equal">
       <div class="col-md-3 well tag_div"><strong>Keywords</strong></div>
-      <div class="col-md-9 well">FAIR, F1, identifier, metadata</div>
+      <div class="col-md-9 well">FAIR, F3, identifier, metadata</div>
     </div>
 
     <div class="row row-equal">
@@ -79,7 +79,7 @@
 
     <div class="row row-equal">
       <div class="col-md-3 well tag_div"><strong>Principle</strong></div>
-      <div class="col-md-9 well"><a href="https://doi.org/10.25504/FAIRsharing.a2cea7" target="_blank">https://doi.org/10.25504/FAIRsharing.a2cea7</a></div> 
+      <div class="col-md-9 well"><a href="https://doi.org/10.25504/FAIRsharing.820324" target="_blank">https://doi.org/10.25504/FAIRsharing.820324</a></div> 
     </div>
 
     <div class="row row-equal">

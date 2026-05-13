@@ -42,10 +42,10 @@
       },
       "dcat:contactPoint": [
         {
-          "@id": "_:g464740"
+          "@id": "_:g465620"
         },
         {
-          "@id": "_:g464780"
+          "@id": "_:g465640"
         }
       ],
       "https://w3id.org/ftr#status": {
@@ -70,7 +70,7 @@
       }
     },
     {
-      "@id": "_:g464740",
+      "@id": "_:g465620",
       "@type": "foaf:Person",
       "vcard:fn": "Renaud DUYME",
       "foaf:mbox": {
@@ -78,7 +78,7 @@
       }
     },
     {
-      "@id": "_:g464780",
+      "@id": "_:g465640",
       "@type": "vcard:Individual",
       "vcard:fn": "Mark D. Wilkinson",
       "vcard:organization-name": "Wilkinson Laboratory, UPM, Madrid",

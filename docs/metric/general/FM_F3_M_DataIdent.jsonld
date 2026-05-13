@@ -1,0 +1,94 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dc": "http://purl.org/dc/terms/",
+    "schemas": "https://schema.org/",
+    "vcard": "http://www.w3.org/2006/vcard/ns#"
+  },
+  "@graph": [
+    {
+      "@id": "https://w3id.org/fair-metrics/general/FM_F3_M_DataIdent",
+      "@type": [
+        "https://w3id.org/ftr#Metric",
+        "dcat:Dataset"
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "https://fairmetrics.github.io/Metrics/metric/general/FM_F3_M_DataIdent.ttl"
+      },
+      "https://w3id.org/ftr#identifier": {
+        "@type": "xsd:anyURI",
+        "@value": "https://w3id.org/fair-metrics/general/FM_F3_M_DataIdent"
+      },
+      "dc:title": "FAIR Metric - F3 - Metadata - includes its own identifier",
+      "http://vivoweb.org/ontology/core#abbreviation": "FM_F3_M_DataIdent",
+      "dcat:landingPage": {
+        "@id": "https://w3id.org/fair-metrics/general/FM_F3_M_DataIdent"
+      },
+      "dc:description": "<p>This metric evaluates whether the metadata record explicitly includes the \n    identifier of the research object(s) it describes.\n<p><p>\nF3 requires that metadata include the identifier(s) of the research object(s) it describes. \nTo align with FAIR, if a metadata record is separated from its associated research object\n (which is common in harvesting and indexing), the connection between them must be \n explicitly preserved. This metric is concerned with the explicit linkage aspect\n  of FAIR; F3 ensures that a machine-actionable relationship exists, allowing \n  harvesters to unambiguously navigate from a descriptive metadata record \n  back to the research object itself. Because many research objects cannot be \n  arbitrarily extended to include references to their metadata, in many cases the \n  only means to discover the metadata related to a research object will be \n  to search based on the identifier of the research object itself.\n<p><p>\nWhile Principle F1 focuses on the qualities of the identifier schema \nbeing used (globally unique, persistent and resolvable), Principle F3 \nrelates to the linkage aspects of the research object identifier. It does not \nmandate that the identifier of the research object within the metadata record \nbe immediately resolvable; rather, it requires that the identifier is present, \n    and formally structured so that the relationship can be maintained and \n    indexed by automated services.\n<p><p>\nThe discovery of a research object should be possible \nfrom its metadata. For this to happen, the metadata must explicitly \ncontain the identifier for the digital resource it describes, and this \nshould be present in the form of a qualified reference. This metric \nevaluates whether the identifier provided as input resolves to \nmetadata that contains a research object identifier. Further, \n    that research object identifier must be distinguished \n    from the numerous other fields and values that will be present in the metadata.\n",
+      "dcat:keyword": [
+        "FAIR",
+        "F3",
+        "identifier",
+        "metadata"
+      ],
+      "http://www.w3.org/ns/dqv#inDimension": {
+        "@id": "https://doi.org/10.25504/FAIRsharing.820324"
+      },
+      "dcat:contactPoint": [
+        {
+          "@id": "_:g468520"
+        },
+        {
+          "@id": "_:g468540"
+        }
+      ],
+      "https://w3id.org/ftr#status": {
+        "@language": "en",
+        "@value": "Active"
+      },
+      "dc:issued": {
+        "@type": "xsd:date",
+        "@value": "2026-05-13"
+      },
+      "dc:modified": {
+        "@type": "xsd:date",
+        "@value": "2026-05-13"
+      },
+      "dcat:version": "Champion1.0",
+      "https://w3id.org/ftr#applicationArea": {
+        "@id": "http://www.fairsharing.org/ontology/subject/SRAO_0000401"
+      },
+      "dc:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "https://w3id.org/ftr#supportedBy": {
+        "@id": "https://w3id.org/FAIR-Champion"
+      },
+      "https://w3id.org/dpv#isApplicableFor": {
+        "@id": "schemas:CreativeWork"
+      }
+    },
+    {
+      "@id": "_:g468520",
+      "@type": "vcard:Individual",
+      "vcard:fn": "Allyson L. Lister",
+      "http://vivoweb.org/ontology/core#orcidId": {
+        "@id": "http://orcid.org/0000-0002-7702-4495"
+      },
+      "vcard:hasEmail": {
+        "@id": "mailto:allyson.lister@oerc.ox.ac.uk"
+      }
+    },
+    {
+      "@id": "_:g468540",
+      "@type": "vcard:Individual",
+      "vcard:fn": "Mark D. Wilkinson",
+      "vcard:organization-name": "Wilkinson Laboratory, UPM, Madrid",
+      "vcard:hasEmail": {
+        "@id": "mailto:mark.wilkinson@upm.es"
+      }
+    }
+  ]
+}
